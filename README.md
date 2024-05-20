@@ -32,15 +32,15 @@ diretório anterior) e cat lê e direciona para a saída o conteúdo de um arqui
 
 
 # E para compilar o programa:
-gcc -c projeto.c 
-gcc -o projeto projeto.o
-./projeto
+- gcc -c projeto.c 
+- gcc -o projeto projeto.o
+- ./projeto
 
 
 # Comandos internos:
-cd
-path
-exit 
+- cd
+- path
+- exit 
 
 # para utilizar os comandos externos (cat, ls, etc...):
 path /bin /usr/bin
