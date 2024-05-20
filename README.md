@@ -20,11 +20,11 @@ caso do Ubuntu. Com apt install, estamos instruindo a instalação de um pacote,
 que contém ferramentas de compilação e bibliotecas essenciais para trabalhar com linguagem C. A instalação de
 pacotes é uma tarefa que requer privilégios administrativos, por isso a necessidade de sudo.
 
- pwd
- ls
- cd labs
- ls -lha
- cat projeto.c
+ - pwd
+ - ls
+ - cd labs
+ - ls -lha
+ - cat projeto.c
   - O comando pwd mostra o caminho para o diretório atual, ls lista o diretório. O modificador -lha no ls instrui para
 que a listagem seja feita em forma de lista (-l), utilizando tamanhos de diretórios legíveis para humanos (-h) e
 incluindo todo o que há no diretório (-a). Com cd, navegamos para outro diretório (utilize cd .. para voltar ao
