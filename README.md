@@ -39,11 +39,8 @@ diretório anterior) e cat lê e direciona para a saída o conteúdo de um arqui
 
 # Comandos internos:
 - cd
-- path
-- exit 
-
-# para utilizar os comandos externos (cat, ls, etc...):
-- path /bin /usr/bin
+- exit
+- path 
 - Utilizando apenas o path, reinicia os caminhos.
 
 
