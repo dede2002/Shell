@@ -43,7 +43,8 @@ diretório anterior) e cat lê e direciona para a saída o conteúdo de um arqui
 - exit 
 
 # para utilizar os comandos externos (cat, ls, etc...):
-path /bin /usr/bin
+- path /bin /usr/bin
+- Utilizando apenas o path, reinicia os caminhos.
 
 
 Obs: qualquer dúvida, utilizar o pdf Lab0 do professor Isaías.
