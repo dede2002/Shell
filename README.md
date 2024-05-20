@@ -8,7 +8,7 @@
 
 
 # Como usar o Shell
-- Após abrir e configurar sua VM Linux, abra um terminal e utilize esses comandos:
+- Após abrir e configurar sua VM, abra um terminal e utilize esses comandos:
 
  sudo mount -t vboxsf labs labs
 - O primeiro “labs” é o nome do compartilhamento configurado no seu sistema e o segundo “labs” é o caminho
