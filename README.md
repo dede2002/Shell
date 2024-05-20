@@ -44,4 +44,4 @@ diretório anterior) e cat lê e direciona para a saída o conteúdo de um arqui
 - Utilizando apenas o path, reinicia os caminhos.
 
 
-Obs: qualquer dúvida, utilizar o pdf Lab0 do professor Isaías.
+Obs: qualquer dúvida, utilizar o pdf Lab0 do professor Isaías ou nos contactar.
