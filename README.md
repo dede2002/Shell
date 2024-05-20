@@ -1,9 +1,11 @@
 # Sobre o Projeto
 - Esse projeto teve o objetivo de programar um Shell (interpretador de comandos) na linguagem C e aprimorar conceitos aprendidos em Sistemas Operacionais.
 
+
 # Tecnologias Utilizadas
 - Visual Studio Code: plataforma escolhida para desenvolver o código.
 - Oracle VM VirtualBox: utilizamos uma VM Linux para conseguir compilar nosso código.
+
 
 # Como usar o Shell
 Após abrir e configurar sua VM Linux, abra um terminal e utilize esses comandos:
@@ -28,10 +30,12 @@ que a listagem seja feita em forma de lista (-l), utilizando tamanhos de diretó
 incluindo todo o que há no diretório (-a). Com cd, navegamos para outro diretório (utilize cd .. para voltar ao
 diretório anterior) e cat lê e direciona para a saída o conteúdo de um arquivo.
 
+
 # E para compilar o programa:
 gcc -c projeto.c 
 gcc -o projeto projeto.o
 ./projeto
+
 
 # Comandos internos:
 cd
