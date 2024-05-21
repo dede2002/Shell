@@ -35,6 +35,7 @@ diretório anterior) e cat lê e direciona para a saída o conteúdo de um arqui
 - gcc -c projeto.c 
 - gcc -o projeto projeto.o
 - ./projeto
+- fazer o mesmo com os arquivos ls.c e cat.c
 
 
 # Comandos internos:
