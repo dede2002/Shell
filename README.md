@@ -42,11 +42,11 @@ diretório anterior) e cat lê e direciona para a saída o conteúdo de um arqui
 - cd
 - exit
 - path 
-- Utilizando apenas o path, reinicia os caminhos.
+- Utilizando apenas o path sem nenhum argumento na frente, reinicia os caminhos.
 
 # Comandos externos:
 - cat
 - ls
+- /usr/bin para utilizar mais comandos externos
 
-
-Obs: qualquer dúvida, utilizar o pdf Lab0 do professor Isaías ou nos contactar.
+Obs: qualquer dúvida na configuração da VM, utilizar o pdf Lab0 do professor Isaías.
