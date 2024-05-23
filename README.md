@@ -1,3 +1,5 @@
+#Grupo 14
+
 # Sobre o Projeto
 - Esse projeto teve o objetivo de programar um Shell (interpretador de comandos) na linguagem C e aprimorar conceitos aprendidos em Sistemas Operacionais.
 
