@@ -1,0 +1,8 @@
+path /home/aluno/labs
+
+ls 
+ls
+ls
+ls
+ls -l
+cat batch.txt
