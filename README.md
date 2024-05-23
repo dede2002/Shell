@@ -37,16 +37,22 @@ diretório anterior) e cat lê e direciona para a saída o conteúdo de um arqui
 - ./projeto
 - fazer o mesmo com os arquivos ls.c e cat.c
 
-
 # Comandos internos:
 - cd
 - exit
-- path 
+- path /caminho
+  ( caso esteja com dúvida em que diretório inserir o caminho, utilize o pwd fora do shell )
+- 
 - Utilizando apenas o path sem nenhum argumento na frente, reinicia os caminhos.
+
+# Executando com bash
+- ./projeto <arquivoConfiguradoBash.txt>
 
 # Comandos externos:
 - cat
 - ls
-- /usr/bin para utilizar mais comandos externos
+- ls -l
+- ls -a
+- path /usr/bin para utilizar mais comandos externos
 
 Obs: qualquer dúvida na configuração da VM, utilizar o pdf Lab0 do professor Isaías.
