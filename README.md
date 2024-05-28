@@ -44,7 +44,7 @@ diretório anterior) e cat lê e direciona para a saída o conteúdo de um arqui
 - exit
 - path /caminho
   ( caso esteja com dúvida em que diretório inserir o caminho, utilize o pwd fora do shell )
-- Utilizando apenas o path sem nenhum argumento na frente, reinicia os caminhos.
+- Utilizando apenas o path sem nenhum argumento na frente, mostra o path atual.
 
 # Executando com bash
 - ./projeto <arquivoConfiguradoBash.txt>
