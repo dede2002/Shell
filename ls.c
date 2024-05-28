@@ -19,7 +19,6 @@ void print_file_info(const char *path, const char *filename) {
         return;
     }
 
-    // File type and permissions
     printf((S_ISDIR(file_stat.st_mode)) ? "d" : "-");
     printf((file_stat.st_mode & S_IRUSR) ? "r" : "-");
     printf((file_stat.st_mode & S_IWUSR) ? "w" : "-");
@@ -32,28 +31,22 @@ void print_file_info(const char *path, const char *filename) {
     printf((file_stat.st_mode & S_IXOTH) ? "x" : "-");
     printf(" ");
 
-    // Number of hard links
     printf("%ld ", (long)file_stat.st_nlink);
 
-    // Owner name
     struct passwd *pw = getpwuid(file_stat.st_uid);
     printf("%s ", pw ? pw->pw_name : "UNKNOWN");
 
-    // Group name
     struct group *gr = getgrgid(file_stat.st_gid);
     printf("%s ", gr ? gr->gr_name : "UNKNOWN");
 
-    // File size
     printf("%ld ", (long)file_stat.st_size);
 
-    // Last modification time
     char time_buf[80];
     struct tm *timeinfo;
     timeinfo = localtime(&file_stat.st_mtime);
     strftime(time_buf, sizeof(time_buf), "%b %d %H:%M", timeinfo);
     printf("%s ", time_buf);
 
-    // File name
     printf("%s\n", filename);
 }
 
@@ -64,7 +57,6 @@ int main(int argc, char *argv[]) {
     int long_listing = 0;
     int show_all = 0;
 
-    // Parse command line arguments
     for (int i = 1; i < argc; i++) {
         if (strcmp(argv[i], "-l") == 0) {
             long_listing = 1;
@@ -89,7 +81,7 @@ int main(int argc, char *argv[]) {
         }
         closedir(d);
     } else {
-        perror("my_ls");
+        perror(NULL);
         return EXIT_FAILURE;
     }
 

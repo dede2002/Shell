@@ -18,7 +18,7 @@ void print_file(const char *filename) {
 
 int main(int argc, char *argv[]) {
     if (argc < 2) {
-        fprintf(stderr, "Uso: %s <arquivo>\n", argv[0]);
+        fprintf(stderr, "Uso correto: %s <arquivo>\n", argv[0]);
         exit(EXIT_FAILURE);
     }
 

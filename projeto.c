@@ -11,7 +11,6 @@
 #define MAX_PATHS 64
 
 void lsh_loop(void);
-void lsh_batch(const char *filename);
 char *lsh_read_line(void);
 char **lsh_split_line(char *);
 int lsh_cd(char **);
@@ -22,14 +21,10 @@ int lsh_launch(char **args);
 char *paths[MAX_PATHS];
 int num_paths = 0;
 
-int main(int argc, char *argv[]) {
+int main() {
     num_paths = 0;
 
-    if (argc == 2) {
-        lsh_batch(argv[1]);
-    } else {
-        lsh_loop();
-    }
+    lsh_loop();
 
     return EXIT_SUCCESS; 
 }
@@ -48,34 +43,6 @@ void lsh_loop(void) {
         free(line);
         free(args);
     } while (status);  
-}
-
-void lsh_batch(const char *filename) {
-    FILE *file = fopen(filename, "r");
-    if (!file) {
-        perror("lsh_batch");
-        exit(EXIT_FAILURE);
-    }
-
-    char *line = NULL;
-    size_t len = 0;
-    char **args;
-    int status;
-
-    while (getline(&line, &len, file) != -1) {
-        printf("batch> %s", line);
-        args = lsh_split_line(line);
-        status = lsh_execute(args);
-
-        free(args);
-
-        if (!status) {
-            break;
-        }
-    }
-
-    free(line);
-    fclose(file);
 }
 
 char *lsh_read_line(void) {
@@ -158,8 +125,14 @@ int lsh_cd(char **args) {
 
 int lsh_path(char **args) {
     if (args[1] == NULL) {
-        num_paths = 0;
-        printf(" Path redefinido.\n");
+        if (num_paths == 0) {
+            printf(" Nenhum path definido.\n");
+        } else {
+            printf(" Caminho atual:");
+            for (int i = 0; i < num_paths; i++) {
+                printf(" %s\n", paths[i]);
+            }
+        }
     } else {
         num_paths = 0;
         for (int i = 1; args[i] != NULL; i++) {
@@ -175,8 +148,6 @@ int lsh_path(char **args) {
             paths[num_paths] = strdup(args[i]);  
             num_paths++;
         }
-        printf(" Novo path definido. \n");
-        
     }
     return 1;
 }
