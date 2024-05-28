@@ -1,4 +1,8 @@
 #Grupo 14
+André Pádua / RA: 22010866
+José Martins / RA: 22002728
+Pedro Pistarini / RA: 22000341
+Lucas Pegoraro / RA: 22009005
 
 # Sobre o Projeto
 - Esse projeto teve o objetivo de programar um Shell (interpretador de comandos) na linguagem C e aprimorar conceitos aprendidos em Sistemas Operacionais.
