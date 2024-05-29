@@ -8,19 +8,21 @@
 - Esse projeto teve o objetivo de programar um Shell (interpretador de comandos) na linguagem C e aprimorar conceitos aprendidos em Sistemas Operacionais.
 
 
-# Tecnologias Utilizadas
+## Tecnologias Utilizadas
 - Visual Studio Code: plataforma escolhida para desenvolver o código.
 - Oracle VM VirtualBox: utilizamos uma VM Linux para conseguir compilar nosso código.
 
 
-# Como usar o Shell
+## Como usar o Shell
 - Após abrir e configurar sua VM, abra um terminal e utilize esses comandos:
-
+```
  sudo mount -t vboxsf labs labs
+```
 - O primeiro “labs” é o nome do compartilhamento configurado no seu sistema e o segundo “labs” é o caminho
 para a pasta recém criada.
-
+```
  sudo apt install build-essential
+```
 - Nesse comando, apt é um gerenciador de pacotes popular em distribuições Linux baseadas em Debian, como é o
 caso do Ubuntu. Com apt install, estamos instruindo a instalação de um pacote, no caso, build-essential,
 que contém ferramentas de compilação e bibliotecas essenciais para trabalhar com linguagem C. A instalação de
