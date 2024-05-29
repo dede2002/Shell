@@ -1,4 +1,4 @@
-#Grupo 14
+# Grupo 14
 - André Pádua / RA: 22010866
 - José Martins / RA: 22002728
 - Pedro Pistarini / RA: 22000341
@@ -38,9 +38,11 @@ diretório anterior) e cat lê e direciona para a saída o conteúdo de um arqui
 
 
 # E para compilar o programa:
+```
 - gcc -c projeto.c 
 - gcc -o projeto projeto.o
 - ./projeto
+```
 - fazer o mesmo com os arquivos ls.c e cat.c, antes de testar o shell
 
 # Comandos internos:
